@@ -46,7 +46,7 @@ router.post(
 );
 
 //GET ALL DOC
-router.get("/getAllDoctors",authMiddleware,getAllDocotrsController);
+router.get("/getAllDoctors",getAllDocotrsController);
 
 //BOOK APPOINTMENT
 router.post("/book-appointment",authMiddleware, bookeAppointmnetController);
@@ -57,6 +57,6 @@ router.post(
 );
 
 //Appointments List
-router.get("/user-appointments",authMiddleware,  userAppointmentsController);//working
+router.get("/user-appointments",  userAppointmentsController);//working
 
 module.exports = router;
