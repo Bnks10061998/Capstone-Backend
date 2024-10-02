@@ -20,7 +20,7 @@ router.post("/getDoctorById",  authMiddleware, getDoctorByIdController);
 
 //GET Appointments
 router.get(
-  "/doctor-appointments", authMiddleware, doctorAppointmentsController
+  "/doctor-appointments",  doctorAppointmentsController
 );
 
 //POST Update Status
