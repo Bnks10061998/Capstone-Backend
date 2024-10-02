@@ -9,10 +9,10 @@ const authMiddleware = require("../middlewares/authMiddleware");
 const router = express.Router();
 
 //GET METHOD || USERS
-router.get("/getAllUsers",  authMiddleware, getAllUsersController);
+router.get("/getAllUsers",  getAllUsersController);
 
 //GET METHOD || DOCTORS
-router.get("/getAllDoctors", authMiddleware, getAllDoctorsController);
+router.get("/getAllDoctors",  getAllDoctorsController);
 
 //POST ACCOUNT STATUS
 router.post(
